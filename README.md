@@ -14,7 +14,7 @@
 
 # MiniWin
 
-**MiniWin** 是在 [MiniMind](https://github.com/jingyaogong/minimind) 基础上修改得到的小型语言模型项目，核心改动来自论文 [Periodic RoPE for Infinite Context LLMs](https://arxiv.org/abs/2605.27980)（P-RoPE）。
+**MiniWin** 是在 [MiniMind](https://github.com/jingyaogong/minimind) 基础上修改得到的小型语言模型项目，核心改动来自论文 [Periodic RoPE for Infinite Context LLMs](https://arxiv.org/abs/2605.27980)（P-RoPE），受[Iwin Transformer](https://github.com/Cominder/Iwin-Transformer)启发不断改进得到。
 
 当序列长度超过预训练位置编码范围时，标准 RoPE 会出现**位置编码耗尽**（position exhaustion），长上下文性能随之下降。MiniWin 通过 **Periodic RoPE（P-RoPE）** 与 **Sliding Window Attention（SWA）** 处理局部依赖，并配合 **No Positional Encoding（NoPE）** 的全局注意力层，在理论上支持更长的上下文窗口。
 
