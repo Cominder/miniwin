@@ -14,7 +14,7 @@
 
 # MiniWin
 
-**MiniWin** is a small language model project built on top of [MiniMind](https://github.com/jingyaogong/minimind). Its core changes come from the paper [Periodic RoPE for Infinite Context LLMs](https://arxiv.org/abs/2605.27980) (P-RoPE).
+**MiniWin** is a small language model project built on top of [MiniMind](https://github.com/jingyaogong/minimind). Its core changes come from the paper [Periodic RoPE for Infinite Context LLMs](https://arxiv.org/abs/2605.27980) (P-RoPE), developed through continuous improvements inspired by [Iwin Transformer](https://github.com/Cominder/Iwin-Transformer).
 
 When sequence length exceeds the pre-trained range of positional encodings, standard RoPE suffers from **position exhaustion**, and long-context performance degrades. MiniWin addresses this with **Periodic RoPE (P-RoPE)** combined with **Sliding Window Attention (SWA)** for local dependencies, plus **No Positional Encoding (NoPE)** global attention layers for unbounded cross-sequence interaction—supporting theoretically infinite context windows.
 
